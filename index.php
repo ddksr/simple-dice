@@ -71,7 +71,7 @@ if ($label && isset($_GET["roll"])) {
 					<label>Options (comma seperated, have to be six!): </label><input type="text" name="opts" value="<?php echo $options ? implode(',',$options) : '' ?> " />
 				</div>
 				<div class="field">
-					<input type="submit" value="Roll the dice!" />
+					<input type="submit" value="Create new dilemma" />
 				</div>
 			</fieldset>
 		</form>
