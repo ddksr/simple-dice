@@ -38,7 +38,7 @@ if ($label && isset($_GET["roll"])) {
 		if ($options) {
 			$value = $options[$value - 1];
 		}
-		$msg = "You rolled the dice! You got <strong>$value</strong>!";
+		$msg = "You rolled the dice! You got <strong>$value</strong>! Options were: " . implode(", ", $options);
 		set_dice($label, $value);
 	}
 }
