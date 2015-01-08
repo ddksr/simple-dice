@@ -33,6 +33,9 @@ if (isset($_GET['opts'])) {
 if ($label && isset($_GET["roll"])) {
 	if ($value) {
 		$msg = "Dice was already rolled. You got <strong>$value</strong>!";
+		if ($options) {
+			$msg .= " Options were: " . implode(", ", $options);
+		}
 	} else {
 		$value = rand(1, 6);
 		if ($options) {
